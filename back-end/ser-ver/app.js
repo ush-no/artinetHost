@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 
 const app = express();
-app.use(cors({ origin: 'https://artinetio-ushnos-projects.vercel.app' }));
+app.use(cors({ origin: 'https://artinetart-ushnos-projects.vercel.app' }));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
