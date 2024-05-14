@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import Users from "../db/model.js";
+import Users from "./db/model.js";
 import bodyParser from "body-parser";
 
 
