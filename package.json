@@ -1,13 +1,12 @@
 {
-  "name": "back-end",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "ser-ver/app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon back-end/ser-ver/app.js",
-    "start": "node back-end/ser-ver/app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
