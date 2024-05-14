@@ -6,15 +6,15 @@ import bodyParser from "body-parser";
 
 const app = express();
 
-/* const options = [ cors({ origin:'https://artinetio-ushnos-projects.vercel.app', 
+const options = [ cors({ origin:'https://artinetio-ushnos-projects.vercel.app', 
     methods: ['GET','POST', 'PUT', 'DELETE'], 
    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, }) ];
-app. use(options);`. */
+app. use(options);`. 
 
 
 
-app.use(cors({ origin: 'https://artinetio-ushnos-projects.vercel.app' }));
+/* app.use(cors({ origin: 'https://artinetio-ushnos-projects.vercel.app' })); */
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
