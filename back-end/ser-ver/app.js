@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 
-const options = [ cors({ origin:'http://localhost:5173', 
+const options = [ cors({ origin:'https://artinetio-ushnos-projects.vercel.app', 
     methods: ['GET','POST', 'PUT', 'DELETE'], 
    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, }) ];
