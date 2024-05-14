@@ -14,7 +14,7 @@ export default function App() {
  useEffect(()=>{
   const fetchData = async ()=>{
     try{
-      const response = await axios.get("https://artinetserver-ushnos-projects.vercel.app/api/fetch");
+      const response = await axios.get("http://localhost:5185/api/fetch");  {/* https://artinetserver-ushnos-projects.vercel.app    http://localhost:5173*/}
       setData(response.data);
     }catch(error){
       console.log("Error",error);
@@ -41,7 +41,7 @@ export default function App() {
      setDisplayText(write);
      setDisplayTitle(title);
      try{
-      const response = await axios.post("https://artinetserver-ushnos-projects.vercel.app/api/posts", {write, title});
+      const response = await axios.post("http://localhost:5185/api/posts", {write, title});
       console.log("Article submit successfully", response.data);
       setTitle(" ");
       setWrite(" ");//clear after post
