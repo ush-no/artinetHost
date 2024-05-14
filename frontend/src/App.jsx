@@ -10,7 +10,6 @@ export default function App() {
   const[displayTitle, setDisplayTitle] = useState("");
   const[data, setData] = useState([]);
   
-
  useEffect(()=>{
   const fetchData = async ()=>{
     try{
