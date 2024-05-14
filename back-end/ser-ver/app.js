@@ -1,3 +1,5 @@
+{/*
+
 import express from "express";
 import cors from "cors";
 import Users from "../db/model.js";
@@ -6,12 +8,12 @@ import bodyParser from "body-parser";
 
 const app = express();
 
-/* const options = [ cors({ origin:'https://artinetio-ushnos-projects.vercel.app', 
+ const options = [ cors({ origin:'https://artinetio-ushnos-projects.vercel.app', 
     methods: ['GET','POST', 'PUT', 'DELETE'], 
    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, }) ];
 
-app. use(options); */
+app. use(options); 
 
 app.use(cors({ origin: 'https://artinetio-ushnos-projects.vercel.app' })); 
 app.use(express.json());
@@ -39,7 +41,9 @@ app.post("/api/posts", async(req, res) => {
     }
 
     await Collection1.insertMany([data])
+    
     res.json(); */
+    {/*
     try{
        /// const posts = await Collection1.create(req.body)
 
@@ -73,3 +77,5 @@ const port = process.env.PORT || 3000; // Default to 3000 if PORT is not set
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+    */}
